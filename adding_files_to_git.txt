@@ -1,0 +1,23 @@
+1) Create a new repository on github with the same name as the project folder on your desktop
+    - DO NOT give it a README.md file though.
+
+2) Navigate to your project folder through iTerm on your desktop
+    cd Desktop
+    cd example-folder
+
+3) Initialize it to be a Git directory (this 
+may take a hot minute)
+    git init
+4) Add all the things in that folder on the desktop to the repo on Github (the dot just says "add everything in this folder, pls!" instead of you needing to specify exactly which documents)
+    git add .
+
+5) Commit the changes
+    git commit -m "I have walked through the valley of the shadow of death"
+
+6) Now we add the "origin" so your computer knows where on github to send your stuff. You'll get the URL from the repo page on your github (it's at the top next to a "set up on desktop" button and an "HTTPS" and "SSH" button - just copy and paste that)
+    git remote add origin https://github.com/maryryan/example-folder.git
+
+7) Now push it, push it
+    git push origin master
+
+8) Congrations! Your desktop files are now on the interwebs. If you just need to update your repo with file changes, just do steps 4, 5 and 7.
